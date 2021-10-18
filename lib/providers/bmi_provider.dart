@@ -17,7 +17,6 @@ class BmiProvider with ChangeNotifier{
     _isFemale = value;
   }
 
-
   double get height => _height;
   double get weight => _weight;
   double get result => _result;
