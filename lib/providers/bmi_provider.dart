@@ -38,4 +38,9 @@ class BmiProvider with ChangeNotifier{
     _height = _height/10.7584; // in m*m
     _result = weight/height;
   }
+  void refresh(){
+    _height = 0;
+    _weight = 0;
+    _result = 0;
+  }
 }

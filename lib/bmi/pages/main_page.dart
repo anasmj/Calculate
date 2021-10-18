@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:my_bmi_calculator/providers/bmi_provider.dart';
-import 'package:my_bmi_calculator/widgets/gender_widget.dart';
-import 'package:my_bmi_calculator/widgets/buttons.dart';
+import 'package:my_bmi_calculator/bmi/widgets/gender_widget.dart';
+import 'package:my_bmi_calculator/bmi/widgets/buttons.dart';
 import 'package:provider/provider.dart';
 
 class MainPage extends StatefulWidget {
@@ -66,7 +66,6 @@ class MainPageState extends State<MainPage> {
       }
       //Navigator.pushNamed(context,'/resultPage', arguments: result!.toStringAsFixed(1));
     }
-
 
     return Scaffold(
       appBar: AppBar(

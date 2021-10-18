@@ -1,4 +1,4 @@
-import 'package:my_bmi_calculator/pages/main_page.dart';
+import 'package:my_bmi_calculator/bmi/pages/main_page.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
