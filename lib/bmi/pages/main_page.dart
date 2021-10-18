@@ -81,23 +81,26 @@ class MainPageState extends State<MainPage> {
                 GestureDetector(
                   child:const Male(),
                   onTap: (){
-                    if(!isMale){
-                      setState((){
-                        isMale = true;
-                        isFemale = false;
-                      });
-                    }
+                    context.read<BmiProvider>().selectMale();
+                    // if(!isMale){
+                    //   setState((){
+                    //     isMale = true;
+                    //     isFemale = false;
+                    //   });
+                    // }
                   },
                 ),
                 GestureDetector(
                   child:const Female(),
                   onTap: (){
-                    if(!isFemale){
-                      setState((){
-                        isFemale = true;
-                        isMale = false;
-                      });
-                    }
+                    context.read<BmiProvider>().selectFemale();
+
+                    // if(!isFemale){
+                    //   setState((){
+                    //     isFemale = true;
+                    //     isMale = false;
+                    //   });
+                    // }
                   },
                 ),
 

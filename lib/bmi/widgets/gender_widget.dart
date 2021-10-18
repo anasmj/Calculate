@@ -1,6 +1,7 @@
-import 'package:my_bmi_calculator/bmi/pages/main_page.dart';
 import 'package:flutter/cupertino.dart';
+import 'package:provider/provider.dart';
 import 'package:flutter/material.dart';
+import 'package:my_bmi_calculator/providers/bmi_provider.dart';
 
 class Male extends StatefulWidget  {
   const Male({Key? key}) : super(key: key);
@@ -13,8 +14,10 @@ class Male extends StatefulWidget  {
 class MaleState extends State<Male>{
   @override
   Widget build (BuildContext context){
-    Color enableColor = MainPageState.isMale ? Colors.black45 : Theme.of(context).scaffoldBackgroundColor;
-    String enableMessage = MainPageState.isMale? 'Enabled' : ' ';
+    final bmiProvider = Provider.of<BmiProvider>(context);
+
+    Color enableColor = bmiProvider.isMale ? Colors.black45 : Theme.of(context).scaffoldBackgroundColor;
+    String enableMessage = bmiProvider.isMale? 'Enabled' : ' ';
 
     return Container(
       width: 130,
@@ -44,8 +47,11 @@ class Female extends StatefulWidget {
 class FemaleState extends State<Female>{
   @override
   Widget build( BuildContext context ){
-    Color enableColor = MainPageState.isFemale ? Colors.black45 : Theme.of(context).scaffoldBackgroundColor;
-    String enableMessage = MainPageState.isFemale? 'Enabled' : ' ';
+    final bmiProvider = Provider.of<BmiProvider>(context);
+
+    Color enableColor = bmiProvider.isFemale ? Colors.black45 : Theme.of(context).scaffoldBackgroundColor;
+    String enableMessage = bmiProvider.isFemale? 'Enabled' : ' ';
+
     return Container(
       width: 130,
       margin: const EdgeInsets.symmetric(vertical: 12.0),
