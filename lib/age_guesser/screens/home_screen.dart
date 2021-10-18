@@ -50,7 +50,7 @@ class HomeScreenState extends State<HomeScreen> {
                 // child: Padding(
                 //   padding: const EdgeInsets.all(12.0),
                   child: Text(
-                    "If you are less than 31 than we are here to guess your age! You are about to see some numbers. Just tell us if your age exists in that page or not. And we will guess it.  Wish me luck! ;)",
+                    "If you are less than 31 than I will find your age! ",
                     style: TextStyle(
                       fontSize: 20.0,
                       fontWeight: FontWeight.bold,
@@ -58,7 +58,7 @@ class HomeScreenState extends State<HomeScreen> {
                   ),
                 //),
               ),
-              const SizedBox(height: 190.0),
+              const SizedBox(height: 220.0),
               SizedBox(
                 width: 100,
                 height: 50,
